@@ -1,0 +1,16 @@
+Terragrunt Download 
+Install Terragrunt on Ubuntu
+Step 1. As a first step go to the official release page, scroll down to the Assets section and download the terragrunt_linux_arm64 file.
+
+Step 2. Once the download is completed, navigate to the file directory (it should be in the Downloads directory) and rename it to terragrunt.
+
+mv terragrunt_linux_arm64 terragrunt
+Step 3. Set executable permissions to the binary file.
+
+chmod u+x terragrunt
+Step 4. Move the Terragrunt file into the $PATH binary on your machine.
+
+mv terragrunt /usr/local/bin/terragrunt
+Step 5. Now, try to execute Terragrunt commands on your machine.
+
+

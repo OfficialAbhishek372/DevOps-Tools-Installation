@@ -1,0 +1,16 @@
+Commands : DOCKER
+
+#to make docker volume
+docker run -itd --name=v1 -v /root/<volume_name_for_root>:/<volume_name_for_container> <image_name>
+
+docker run -itd -p 8080:8080 -v /root/jenkinshome:/var/jenkins_home --user=jenkins jenkins/jenkins:lts
+
+#Check which is service using the port
+sudo lsof -i :8080
+#kill that service
+sudo kill <PID>
+
+
+dockerd --debug (debug the docker)
+docker prune (removes all the volumes that are unused)
+
